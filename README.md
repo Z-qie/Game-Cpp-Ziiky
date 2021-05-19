@@ -274,10 +274,24 @@ Notes:
 
 # 6. Demo Video
 
-Dev log 01  []
+##### Final Dev Demo (20min+) [https://www.bilibili.com/video/BV1Wo4y117ou]
 
-Dev log 02  []
+Final Trailer (3min-) [TBC]
 
-Dev log 03  []
+###### Dev log 01  [https://www.bilibili.com/video/BV1PA411K7az]
 
-Dev log 04  []
+###### Dev log 02  [https://www.bilibili.com/video/BV1w64y1Q7U2]
+
+###### Dev log 03  [https://www.bilibili.com/video/BV1sy4y1b7DB]
+
+###### Dev log 04  [https://www.bilibili.com/video/BV1354y1b7SH]
+
+###### Dev log 05  [https://www.bilibili.com/video/BV1fv411j75h]
+
+###### Dev log 06 [https://www.bilibili.com/video/BV1KA411L7Ej]
+
+###### Dev log 07  [https://www.bilibili.com/video/BV1BV411E7me]
+
+###### Dev log 08  [https://www.bilibili.com/video/BV12q4y177VK]
+
+###### Dev log 09  [https://www.bilibili.com/video/BV1Y64y1d74k]
