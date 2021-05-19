@@ -11,7 +11,9 @@ enum LoadingUIState {
     LOAD_IDLE
 };
 
-
+// I intended to design a "fake" Loading Scene because we are doing mono-threading, 
+// the loading cannot really load under the scene. But hopefully, this scene would smooth the cringgy feeling of 
+// stark loading time and giving players a good feeling
 class LoadingUI : public GameObject
 {
 protected:
@@ -26,7 +28,6 @@ private:
     int m_iCurrentTime{0};
 
 public:
-    //GameUI() {};
 
     static LoadingUI* getInstance();
     virtual ~LoadingUI() override {
@@ -37,9 +38,5 @@ public:
     virtual void virtStart() override;
     virtual void virtDoUpdate(int iCurrentTime) override;
     virtual void virtDraw()override;
-
-    void drawResult();
-    void drawBackground();
-    void drawBoardFrame();
 };
 

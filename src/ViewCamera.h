@@ -1,12 +1,15 @@
 #pragma once
 #include "Utils.h"
-//#include "ExampleFilterPointClasses.h"
+#include "ExampleFilterPointClasses.h"
 #include "Zy21586FilterPointsScale.h"
 
 class Zy21586Engine;
 class GameObject;
 class CaveGenerator;
 
+// ViewCamera class contains and handles a Zy21586FilterPointsScale and a FilterPointsTranslation. 
+// ViewCamera is used in introScene to zoom and shrink the user manual(Dragable gameobject) 
+// by keyboard (w to zoom, s to shrink and space to reset) and mouse (click to drag).
 class ViewCamera
 {
 protected:
@@ -29,8 +32,8 @@ private:
     int m_iZoomMax{ 2 };
     int m_iZoomMin{ -3 };
 
-    Zy21586FilterPointsScale m_filterScaling; //TBC
-    //FilterPointsTranslation m_filterTranslation;
+    Zy21586FilterPointsScale m_filterScaling; 
+    FilterPointsTranslation m_filterTranslation;
 
 
 public:
@@ -38,8 +41,6 @@ public:
     void onUpdate();
     int getScreenX(int x) { return x - getOffset().x; };
     int getScreenY(int y) { return y - getOffset().y; };
-    /*void setStart(int iX, int iY);
-    void unset();*/
 
     void zoomIn();
     void zoomOut();
@@ -50,8 +51,4 @@ public:
     bool isZoomMin() { return m_iFactor == m_iZoomMin; };
     Vec2 getOffset();
     Vec2 getCameraPosition();
-    /* int getCurrentCameraTop() { return iCurrentCameraTop; };
-     int getCurrentCameraBottom() { return iCurrentCameraBottom; };
-     int getCurrentCameraLeft() { return iCurrentCameraLeft; };
-     int getCurrentCameraRight() { return iCurrentCameraRight; };*/
 };

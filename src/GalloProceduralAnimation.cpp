@@ -16,6 +16,19 @@ int Gallo::iWireEffectRadius = 6;
 int Gallo::iWireEffectClampValue = iWireEffectRadius * 4;
 int Gallo::iWireEffectDensity = 20;
 
+/*
+Gallo's Animation
+1. All animations of all states of gallo are made by code(procedural animation) without images.
+2. Wander & Chase: When wandering, the colour of eyes of gallos are black with fuzzy feathers(by drawForegroundLineand oval.hollowOval…); when detectingand chasing the player, they turn to red.
+3. Attack: When attacking the player, they transform to a new attacking formation :
+1. growing its size at a linear interpolated(smoothed) speed till max radius;
+2. using their dark feathers to attack the player.
+4. Death: On death, they transform to a new dying formation :
+1. turning into white colour;
+2. growing its size at a linear interpolated speed while shrink / flash their radius by a ping - pong algorithm till vanishing.
+5. They can turn left and right and display themselves correctly based on left and right direction.
+6. All shadowing effects are coded by foregroundhollowOval and Oval
+*/
 void Gallo::virtDraw() {
 
     if (galloState == GALLO_ONDEATH) {
@@ -156,7 +169,4 @@ void Gallo::virtDraw() {
                 0x313131);
         }
     }
-
-    //drawSprite();
-
 }

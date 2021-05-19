@@ -2,6 +2,7 @@
 
 #include "Utils.h"
 
+//Handles read/wirte to the record file and return result string list accordingly.
 class RecordManager
 {
 protected:
@@ -36,15 +37,9 @@ public:
     void readRecordFromFile();
     void updateRecordToFile(std::string playerName);
     void resetRecordFile();
-
-
     void updateInGameData(int second, int numOfRune, int numOfKill, int HP);
     const std::vector<std::string>& decodeResult();
     const std::vector<std::string>& decodeRecord();
 
-    /*  void setThisSecond(int second) { m_iThisSecond = second; };
-      void setThisNumOfRune(int num) { m_iThisNumofRune = num; };
-      void setThisNumOfKill(int kill) { m_iThisNumOfKill = kill; };
-      void setT*/
 };
 

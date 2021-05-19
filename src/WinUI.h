@@ -9,7 +9,8 @@ enum WinUIState {
     WIN_LIGHTENGING
 };
 
-
+//Similar to GameOverUI, when the player has activated all the runes (though it is not trivial to achieve that lol,
+//I secretly added a developer sugar to let you win directly during the debug/test by pressing "o", don't tell any others please,between you and me.)
 class WinUI : public GameObject
 {
 protected:

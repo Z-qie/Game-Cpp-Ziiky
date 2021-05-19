@@ -10,6 +10,7 @@ enum ButtonState {
     BUTTON_CLICK
 };
 
+//Specifying a game object that is an animated (see Animator&Animation class) button which can handle user mouse click/hover events.
 class BaseButton : public GameObject
 {
 protected:

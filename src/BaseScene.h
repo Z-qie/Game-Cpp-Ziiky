@@ -2,6 +2,7 @@
 
 class Zy21586Engine;
 
+//The basic structure of each scene to handle different event such as onCreation, onDestroy, onActivate, onDeactivate..
 class BaseScene
 {
 public:
@@ -41,6 +42,7 @@ public:
     virtual void virtMouseDown(int iButton, int iX, int iY) {};
     virtual void virtMouseUp(int iButton, int iX, int iY) {};
     virtual void virtKeyDown(int iKeyCode) {};
+    virtual void virtMouseWheel(int x, int y, int which, int timestamp) {};
 
 
 protected:

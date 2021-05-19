@@ -5,6 +5,8 @@
 class ParticleMap;
 class LoadingUI;
 
+//A Fake Loading Scene because we are doing mono-threading, the loading cannot really load under the scene, 
+//this scene is only for hiding the loading time and giving players a professional feeling.
 class LoadingScene :public BaseScene
 {
 public:

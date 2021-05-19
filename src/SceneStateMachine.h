@@ -17,6 +17,9 @@ enum class SceneID
 
 };
 
+//The state machine receives jobs from engine and relays the job further to the current scenes(6 scenes: MENU, LOADING,  
+//GAME,(gaming, pause, win(intermediate)) RESULT,(after winning) INSTRUCTION, RECORD). 
+//It is state machine's job to determine and switch between scenes.
 class SceneStateMachine
 {
 

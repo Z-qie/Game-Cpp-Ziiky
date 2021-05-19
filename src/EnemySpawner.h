@@ -4,6 +4,11 @@
 
 class Gallo;
 
+//All gallos are controlled by EnemySpawner.
+//1. the max number of gallos alive in the game: 25 max
+//2. the interval of spawning is 0.8s
+//3. the position of each gallo spawned: 400 radius from player(outside the camera's view), 
+//to give the player a feeling that the enemies are already there.
 class EnemySpawner
 {
 private:

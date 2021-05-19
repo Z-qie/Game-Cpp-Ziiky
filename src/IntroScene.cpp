@@ -28,26 +28,15 @@ void IntroScene::onActivate()
     pViewCamera = ViewCamera::getInstance();
     pViewCamera->bindCamera();
 
-
     pInstructionUI = InstructionUI::getInstance();
     pEngine->createObjectArray(iGameObjectNum);
     pEngine->storeObjectInArray(++iCurrentGameObject, pInstructionUI);
 
-    //pEngine->storeObjectInArray(++iCurrentGameObject, m_pMenuRecordButton);
-    //pEngine->storeObjectInArray(++iCurrentGameObject, m_pMenuQuitButton);
-    //std::cout << "onActivate done" << std::endl;
 }
 
 //int testInt = 2147483647;
 void IntroScene::virtMainLoopPreUpdate() {
-    //std::cout << "virtMainLoopPreUpdate" << std::endl;
-    //std::cout << testInt / 1000 /60  << std::endl;
     pEngine->redrawDisplay();
-    /*   if (m_pDiscardButton->isClicked()) {
-           SceneStateMachine::getInstance()->switchTo(SceneID::MENU);
-       }*/
-
-
 }
 
 void IntroScene::virtMainLoopDoBeforeUpdate() {
@@ -77,18 +66,6 @@ void IntroScene::virtPostDraw() {
     //m_pMenuButtonMap->drawAllTiles(pEngine, pEngine->getForegroundSurface());
 }
 
-//void IntroScene::virtMouseDown(int iButton, int iX, int iY) {
-//   /* if (iButton == SDL_BUTTON_LEFT) {
-//        std::cout << "virtMainLoopPreUpdate" << std::endl;
-//        pViewCamera->setStart(iX, iY);
-//    }*/
-//}
-//
-//void IntroScene::virtMouseUp(int iButton, int iX, int iY) {
-//    //if (iButton == SDL_BUTTON_LEFT) {
-//    //    pViewCamera->unset();
-//    //}
-//}
 
 void IntroScene::virtKeyDown(int iKeyCode) {
     if (iKeyCode == SDLK_ESCAPE) {

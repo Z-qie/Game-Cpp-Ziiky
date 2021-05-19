@@ -159,8 +159,21 @@ void GameScene::virtPreDraw() {
     if (!pEngine->isPaused()/* && !m_bWin*/) {
         pEngine->fillBackground(0x565656);
 
+        //enhance performance!!!!
         pGroundRenderer->drawAllTiles(pEngine, pEngine->getBackgroundSurface());
         pCaveGenerator->drawAllTiles(pEngine, pEngine->getBackgroundSurface()); // draw cave background
+        //should be tile index 
+       /* pGroundRenderer->drawSomeTiles(pEngine, pEngine->getBackgroundSurface(), 
+            pPlayer->getPosition().x - base_window_width/2, 
+            pPlayer->getPosition().y - base_window_height / 2,
+            base_window_width,
+            base_window_height);
+        pCaveGenerator->drawSomeTiles(pEngine, pEngine->getBackgroundSurface(),
+            pPlayer->getPosition().x - base_window_width / 2,
+            pPlayer->getPosition().y - base_window_height / 2,
+            base_window_width,
+            base_window_height);*/
+
     }
 }
 

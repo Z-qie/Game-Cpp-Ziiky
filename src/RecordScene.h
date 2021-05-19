@@ -6,6 +6,7 @@
 class RecordUI;
 class ResetButton;
 
+//In this scene you can view the best record made by previous players. And you are allow to reset the record with a rest button.
 class RecordScene :public BaseScene
 {
 public:
@@ -19,7 +20,6 @@ public:
     virtual void virtPreDraw() override;
     virtual void virtPostDraw() override;
     virtual void virtKeyDown(int iKeyCode)override;
-
 
 private:
     RecordUI* pRecordUI{ nullptr };

@@ -8,14 +8,17 @@
 // After I have learned template, 
 // I used it to ask for an Enum for any object: player'state, enemy's state..
 
-
+//When a gameObject needs to display itself as aniamtion(with images), it is the 
+//animator's job to realize the current state of the game object, switch and display 
+//the animation accordingly. Each animator class is generated and initialized from template 
+//class code based on the state it will handle. E.g. player can have a player state with idle, 
+//running left, right and etc. Each animator has several animations according to different states.
 template<typename AnimationState, class Enable = void>
 class Animator;
 template<typename AnimationState>
 class Animator<AnimationState, typename std::enable_if<std::is_enum<AnimationState>::value>::type>
 {
 protected:
-    //std::shared_ptr<C_Sprite> sprite; 
     std::map<AnimationState, std::shared_ptr<Animation>> m_Animations;
 
     // store a reference to the current animation so we can quickly update and draw it.
@@ -24,14 +27,6 @@ protected:
         std::shared_ptr<Animation>> m_oCurrentAnimation;
 
 public:
-    /*   Animator();
-       const SimpleImage& play();
-       void addAnimation(AnimationState state,
-           std::shared_ptr<Animation> animation);
-       void setAnimationState(AnimationState state);
-       const AnimationState& getAnimationState() const;
-   */
-
     Animator() {};
     ~Animator() {};
 
@@ -39,11 +34,6 @@ public:
         AnimationState state, std::shared_ptr<Animation> animation)
     {
         auto inserted = m_Animations.insert(std::make_pair(state, animation));
-        //std::cout << AnimationState::None << std::endl;
-        //std::cout << PlayerState::None << std::endl;
-        //if (m_oCurrentAnimation.first == AnimationState::None) {
-        //    setAnimationState(state);
-        //}
     }
 
     void Animator::setAnimationState(AnimationState state)

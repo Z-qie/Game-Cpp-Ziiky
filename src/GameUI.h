@@ -3,6 +3,11 @@
 #include <queue>
 #include "GameObject.h"
 
+//This UI is a gameobjectl, with an inner debugPanel(can be helpful during dev. and debug), 
+//to display the current state of the player, such as current HP, the number of Kills, 
+//the number of Runes activated, surviving time and FPS.
+//I intentionally designed and arranged an animated UI panel to present an active feeling for
+//the player in the game with the colour scheme similar to the player (cyan and white).
 class GameUI : public GameObject
 {
 protected:

@@ -1,7 +1,7 @@
 #pragma once
 #include "Damageable.h"
 #include "GameObject.h"
-
+//Subclass of Damageable, specifying a game object that has a life and can be killed (such as enemies, player).
 class LivingEntity : public GameObject, public Damageable
 {
 protected:
@@ -36,9 +36,6 @@ protected:
 private:
     void die() {
         m_bIsDead = true;
-        /* if (OnDeath != null) {
-             OnDeath();
-         }*/
         onDeath();
          // destory itself??
     }

@@ -31,6 +31,126 @@
     <Filter Include="Source Files\More advanced demos">
       <UniqueIdentifier>{427592e9-3a23-441e-8895-59b91fa3c6af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CWPart2">
+      <UniqueIdentifier>{c038d596-77e4-4bff-a511-6800de069263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\AnimationSystem">
+      <UniqueIdentifier>{2e8e91cb-40d4-44f7-87a4-856e4a7da1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\Base">
+      <UniqueIdentifier>{2b0d55d6-1549-4e7d-b8fc-5ed22d601104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\Base\Camera">
+      <UniqueIdentifier>{0ba8118e-a960-44c0-83d7-aedbf6418878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\EnemySystem">
+      <UniqueIdentifier>{114bc488-994a-4908-b267-74fa1ac2f996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\MapSystem">
+      <UniqueIdentifier>{ffa0b011-c373-46b1-ae4f-7b436b5bdebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\ParticleSystem">
+      <UniqueIdentifier>{5a255872-f57c-4d86-aa15-95e447ce12c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\Player">
+      <UniqueIdentifier>{3ca8ca68-16fb-4187-8123-9485d4c5a6c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\SceneSystem">
+      <UniqueIdentifier>{7c4d47d7-9483-4202-9305-23f1ba369ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\SpellSystem">
+      <UniqueIdentifier>{e2c59882-e85e-4638-a262-40708fc92a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI">
+      <UniqueIdentifier>{3f8103c1-9dca-469b-a01e-99b332876cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\GameScene">
+      <UniqueIdentifier>{3d346eaa-669a-444a-a66b-f3e2aed6960c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\IntroScene">
+      <UniqueIdentifier>{7f0cff2d-2f2a-4cb3-b48c-ec2d5c7b61fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\LoadingScene">
+      <UniqueIdentifier>{e398ece1-e875-4225-9261-991690ad2809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\MenuScene">
+      <UniqueIdentifier>{26e0508b-0d18-4335-a691-5a474ec5c733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\RecordScene">
+      <UniqueIdentifier>{06f3e785-d0ae-4469-a4e9-347fd1e11295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\UI\ResultScene">
+      <UniqueIdentifier>{2baee3bf-4fac-4d1a-82c9-63b8ed538328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart2\Utils">
+      <UniqueIdentifier>{d9f062a1-7783-4472-8953-e7890838a0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CWPart1">
+      <UniqueIdentifier>{f81bfca4-7899-458f-89b2-4aa740714015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2">
+      <UniqueIdentifier>{35bb5178-eb3e-423c-9891-7e43c8695cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\AnimationSystem">
+      <UniqueIdentifier>{721c689e-1fbf-4ad3-8449-97bd79882e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Base">
+      <UniqueIdentifier>{1555c302-2ae9-402b-8079-141944143605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Base\Camera">
+      <UniqueIdentifier>{b52b2cc2-e782-4dcf-8a9d-3aa8fd6fb674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Base\GameObject">
+      <UniqueIdentifier>{babe947d-d984-4822-871b-40d1996d4d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Base\GameObject\Inheritable">
+      <UniqueIdentifier>{a421be80-99a6-4226-a418-baceec1d52c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Base\Engine">
+      <UniqueIdentifier>{482a0b04-0ebd-4b7a-9621-fbd7b0ae4399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\EnemySystem">
+      <UniqueIdentifier>{7f5f1a26-513f-490a-8e23-533e805b1ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\MapSystem">
+      <UniqueIdentifier>{c661a019-23ca-4dd0-9930-6c9a50982894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\ParticleSystem">
+      <UniqueIdentifier>{9e036dd5-fc78-49db-9570-93d876935f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Player">
+      <UniqueIdentifier>{8c5148bd-41ca-49d5-be98-a8260e30a9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\SceneSystem">
+      <UniqueIdentifier>{df997cc6-c489-49c0-8e96-a08b39b36da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\SpellSystem">
+      <UniqueIdentifier>{37bfe91e-8236-42a5-85f6-c234302a1886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI">
+      <UniqueIdentifier>{feba9371-03ed-4c1d-8d27-2ae698e2f064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\GameScene">
+      <UniqueIdentifier>{2a3ade3d-75dc-476b-b1cf-34546f59d7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\IntroScene">
+      <UniqueIdentifier>{1f06468e-79ea-44cd-ae44-7d78702202ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\LoadingScene">
+      <UniqueIdentifier>{c5b44b7e-5313-427b-851b-559f09dfb82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\MenuScene">
+      <UniqueIdentifier>{686c1694-6156-47b8-91b6-b37e213f5aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\RecordScene">
+      <UniqueIdentifier>{d05c0ca2-65a6-4489-912a-805bf231eeee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\UI\ResultScene">
+      <UniqueIdentifier>{74175225-3180-4e7e-b8df-4a03f05944ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CWPart2\Utils">
+      <UniqueIdentifier>{7dfa8879-c203-4421-a00d-07313c78c3bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
@@ -127,193 +247,181 @@
       <Filter>Header Files\More advanced demos</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\AnimationSystem</Filter>
     </ClInclude>
     <ClInclude Include="Animator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CaveGenerator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Collidable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CollisionSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConfirmButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Damageable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DeadWallSpawner.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DeadWallUnit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DiscardButtion.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemySpawner.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Gallo.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\AnimationSystem</Filter>
     </ClInclude>
     <ClInclude Include="GameCamera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameOverUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GroundRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ImageMappingGeneralist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InstructionUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IntroScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LivingEntity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LoadingScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LoadingUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuButtonMap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuIntroButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuQuitButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuRecordButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuStartButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MyDemoA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MyObjectB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MyTileManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Particle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ParticleMap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PauseUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Projectile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecordManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecordScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecordUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ResetButton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ResultScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ResultUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Room.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rune.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RuneManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBG.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneStateMachine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ThunderBolt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ThunderZone.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ThunderZoneController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\Base\Camera</Filter>
     </ClInclude>
     <ClInclude Include="ViewCamera.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\Base\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Wand.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BaseButton.h">
+      <Filter>Header Files\CWPart2\Base\GameObject\Inheritable</Filter>
     </ClInclude>
-    <ClInclude Include="WandController.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Collidable.h">
+      <Filter>Header Files\CWPart2\Base\GameObject\Inheritable</Filter>
     </ClInclude>
-    <ClInclude Include="WinUI.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Damageable.h">
+      <Filter>Header Files\CWPart2\Base\GameObject\Inheritable</Filter>
+    </ClInclude>
+    <ClInclude Include="LivingEntity.h">
+      <Filter>Header Files\CWPart2\Base\GameObject\Inheritable</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\CWPart2\Base\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSystem.h">
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMappingGeneralist.h">
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordManager.h">
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Zy21586Engine.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Zy21586FilterPointsScale.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Zy21586TileManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\CWPart2\Base\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadWallSpawner.h">
+      <Filter>Header Files\CWPart2\EnemySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadWallUnit.h">
+      <Filter>Header Files\CWPart2\EnemySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawner.h">
+      <Filter>Header Files\CWPart2\EnemySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Gallo.h">
+      <Filter>Header Files\CWPart2\EnemySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CaveGenerator.h">
+      <Filter>Header Files\CWPart2\MapSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GroundRenderer.h">
+      <Filter>Header Files\CWPart2\MapSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files\CWPart2\MapSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune.h">
+      <Filter>Header Files\CWPart2\MapSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RuneManager.h">
+      <Filter>Header Files\CWPart2\MapSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleMap.h">
+      <Filter>Header Files\CWPart2\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Header Files\CWPart2\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\CWPart2\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Header Files\CWPart2\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneStateMachine.h">
+      <Filter>Header Files\CWPart2\SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ThunderBolt.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ThunderZone.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ThunderZoneController.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Wand.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="WandController.h">
+      <Filter>Header Files\CWPart2\SpellSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>Header Files\CWPart2\UI\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverUI.h">
+      <Filter>Header Files\CWPart2\UI\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="WinUI.h">
+      <Filter>Header Files\CWPart2\UI\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseUI.h">
+      <Filter>Header Files\CWPart2\UI\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionUI.h">
+      <Filter>Header Files\CWPart2\UI\IntroScene</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingUI.h">
+      <Filter>Header Files\CWPart2\UI\LoadingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuIntroButton.h">
+      <Filter>Header Files\CWPart2\UI\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuQuitButton.h">
+      <Filter>Header Files\CWPart2\UI\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRecordButton.h">
+      <Filter>Header Files\CWPart2\UI\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuStartButton.h">
+      <Filter>Header Files\CWPart2\UI\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBG.h">
+      <Filter>Header Files\CWPart2\UI\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordUI.h">
+      <Filter>Header Files\CWPart2\UI\RecordScene</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetButton.h">
+      <Filter>Header Files\CWPart2\UI\RecordScene</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfirmButton.h">
+      <Filter>Header Files\CWPart2\UI\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscardButtion.h">
+      <Filter>Header Files\CWPart2\UI\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultUI.h">
+      <Filter>Header Files\CWPart2\UI\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files\CWPart2\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -372,178 +480,163 @@
       <Filter>Source Files\More advanced demos</Filter>
     </ClCompile>
     <ClCompile Include="Animation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\AnimationSystem</Filter>
     </ClCompile>
     <ClCompile Include="Animator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CaveGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CollisionSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfirmButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DeadWallSpawner.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DeadWallUnit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="debugPanel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DiscardButtion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemySpawner.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Gallo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GalloProceduralAnimation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\AnimationSystem</Filter>
     </ClCompile>
     <ClCompile Include="GameCamera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameOverUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GroundRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InstructionUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IntroScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LoadingScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LoadingUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuButtonMap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuIntroButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuQuitButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuRecordButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuStartButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyDemoA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyObjectB.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyTileManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ParticleMap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Particles.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PauseUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerAnimatior.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Projectile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RecordManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RecordScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RecordUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ResetButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ResultScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ResultUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Room.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rune.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RuneManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneBG.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneStateMachine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ThunderBolt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ThunderZone.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ThunderZoneController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\Base\Camera</Filter>
     </ClCompile>
     <ClCompile Include="ViewCamera.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\Base\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="Wand.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="CollisionSystem.cpp">
+      <Filter>Source Files\CWPart2\Base</Filter>
     </ClCompile>
-    <ClCompile Include="WandController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WinUI.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="RecordManager.cpp">
+      <Filter>Source Files\CWPart2\Base</Filter>
     </ClCompile>
     <ClCompile Include="Zy21586Engine.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\Base</Filter>
     </ClCompile>
     <ClCompile Include="Zy21586TileManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CWPart2\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadWallSpawner.cpp">
+      <Filter>Source Files\CWPart2\EnemySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadWallUnit.cpp">
+      <Filter>Source Files\CWPart2\EnemySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawner.cpp">
+      <Filter>Source Files\CWPart2\EnemySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Gallo.cpp">
+      <Filter>Source Files\CWPart2\EnemySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GalloProceduralAnimation.cpp">
+      <Filter>Source Files\CWPart2\EnemySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CaveGenerator.cpp">
+      <Filter>Source Files\CWPart2\MapSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GroundRenderer.cpp">
+      <Filter>Source Files\CWPart2\MapSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files\CWPart2\MapSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune.cpp">
+      <Filter>Source Files\CWPart2\MapSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RuneManager.cpp">
+      <Filter>Source Files\CWPart2\MapSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles.cpp">
+      <Filter>Source Files\CWPart2\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleMap.cpp">
+      <Filter>Source Files\CWPart2\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\CWPart2\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files\CWPart2\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStateMachine.cpp">
+      <Filter>Source Files\CWPart2\SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ThunderBolt.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ThunderZone.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ThunderZoneController.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Wand.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="WandController.cpp">
+      <Filter>Source Files\CWPart2\SpellSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverUI.cpp">
+      <Filter>Source Files\CWPart2\UI\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>Source Files\CWPart2\UI\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseUI.cpp">
+      <Filter>Source Files\CWPart2\UI\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="WinUI.cpp">
+      <Filter>Source Files\CWPart2\UI\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructionUI.cpp">
+      <Filter>Source Files\CWPart2\UI\IntroScene</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingUI.cpp">
+      <Filter>Source Files\CWPart2\UI\LoadingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuIntroButton.cpp">
+      <Filter>Source Files\CWPart2\UI\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuQuitButton.cpp">
+      <Filter>Source Files\CWPart2\UI\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRecordButton.cpp">
+      <Filter>Source Files\CWPart2\UI\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuStartButton.cpp">
+      <Filter>Source Files\CWPart2\UI\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBG.cpp">
+      <Filter>Source Files\CWPart2\UI\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordUI.cpp">
+      <Filter>Source Files\CWPart2\UI\RecordScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetButton.cpp">
+      <Filter>Source Files\CWPart2\UI\RecordScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmButton.cpp">
+      <Filter>Source Files\CWPart2\UI\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscardButtion.cpp">
+      <Filter>Source Files\CWPart2\UI\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultUI.cpp">
+      <Filter>Source Files\CWPart2\UI\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="debugPanel.cpp">
+      <Filter>Source Files\CWPart2\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files\CWPart2\Utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

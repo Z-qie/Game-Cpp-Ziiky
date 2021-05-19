@@ -138,7 +138,6 @@ Notes:
 | CaveGenerator          | This is a rouge-like survival game. Therefore, I made an auto-generated cave map with size 12800 * 7200 which the player can explore in the cave with a 720 * 720 sized camera following.<br />1. I implemented this by first randomly by given seed setting each tile type of the map as cave tile/empty ground tile and then using a **cellular-automata algorithm** to **smooth** the noised map several times(based on strength) to converge all same tiles to generate several caves. <br />2. After that, I implemented a **flood-fill algorithm** to get all caves I got and refine the map by eliminating the cave with invalid size (too small or too big). Finally, I implemented another modified **TSP AI algorithm** to connect all caves by finding the shortest path btw two tiles that are edges of every two caves and creating paths btw them by setting all tiles whose coordinates are overlapped by the lines btw these pairs of edges with a pre-set width. <br />3. When connecting caves, by making sure all caves are connected, I set the cave with the largest size as main cave and make each cave is either connected to the main cave or the cave it connected with is connected to the main room and recursively. Therefore, all caves are achievable by the player after this process.<br />4. During the generation, this generator will also initialize other tile types such as rune's position, dead walls, enemy spawning points and player's initial position. |
 | RuneManger             | During the generation of cave map, before connection all the cave together, CaveGenerator will set runes' position as tile type in each cave. The number of runes in each cave is based on their size with a minimum value as 1. It's RuneManger's job to initialize runes and handle all events to each runes. |
 | GroundRender           | This tile map as environment renderer will control the random environment features like fuzzy visual effect and different images of stones on the ground. |
-
 </details>
 
 
@@ -194,12 +193,17 @@ Notes:
   <summary> 5. UI</summary>
 
 
-| Features | Description |
-| -------- | ----------- |
-|          | ,           |
-|          |             |
-|          |             |
-|          |             |
+| Features               | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| GameScene - GameUI     | This UI is a gameobjectl, with an inner debugPanel(can be helpful during dev. and debug), to display the current state of the player, such as current HP, the number of Kills, the number of Runes activated, surviving time and FPS.<br />I intentionally designed and arranged an animated UI panel to present an active feeling for the player in the game with the colour scheme similar to the player (cyan and white). |
+| GameScene - GameOverUI | When the player is killed, the game Scene will display a Game Over UI with a drew picture(see screenshots below) as background to let the player to choose play again or back to the Start Menu. This UI is designed as an inner state of the GameScene instead of a separate scene because I intended to make the UI semi-transparent and still render the game scene (such as enemies and players) with only stop some specific elements (such as enemies's wandering, player controls and some data) |
+| GameScene - PauseUI    | Similar to the GameOverUI, when pressing Space button, the game is paused (only the enemy movement, player control and timer in the UI are paused, all other animation are remained) and a semi-transparent smoke effect is displayed on the game scene. Then, the player can choose to resume the game or go back to the Start Menu. |
+| GameScene - WinUI      | Similar to GameOverUI, when the player has activated all the runes (though it is not trivial to achieve that lol, I secretly added a developer sugar to let you win directly during the debug/test by pressing "o", don't tell any others please,between you and me.) |
+| IntroScene             | Instruction scene presents you a great (I reckon at least) hand-drawn user manual to teach you how to play the game. It is scrollable and draggable by ViewCamera and two FilterPoints, have fun with it. |
+| LoadingScene           | I intended to design a "fake" Loading Scene because we are doing mono-threading, the loading cannot really load under the scene. But hopefully, this scene would smooth the cringgy feeling of stark loading time and giving players a good feeling. |
+| MenuScene              | This is a menu scene with a interactable sand simulation system. By click left mouse button, the user can generate more particles into the scene; by click right mouse button, the user can erase all the particles around the mouse position. And all other particles will simulated the sand behavior to fill the erased gap.<br /> when the number of particles exceeds a specific number, the bottom level of particles will be eliminated to ensure there will not be too many of them!<br />Each particle is a struct contains a fixed color to simulated a noise effect of sand. Of course it is still a menu page  with four animated button. |
+| RecordScene            | In this scene you can view the best record made by previous players. And you are allow to reset the record with a rest button. |
+| ResultScene            | After winning the game,  you are transferred to this scene to show your record and compare with the best record. You will be asked to input your name with alphabetic character within  a length of 25. Of course you can discard your record and go back to menu directly. |
 
 </details>
 
@@ -221,12 +225,12 @@ Notes:
 
 
 
-| Features | Description |
-| -------- | ----------- |
-| TBC      |             |
-|          |             |
-|          |             |
-|          |             |
+| Features           | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| Render Environment | 1.Because the game map is huge compared to the screen size, I check the boundary coordinates of camera every frame and only render the elements efficiently inside the view of camera.<br />2. As the ground is a tile manager, and only a few random stones needs to be pre-set and render separately, instead of render the ground tile one by one with the same colour, I simply fill the background as a dark grey colour and skip the tiles that are empty and only draw the wall tile as black. For the environmental stones, make a separate tile manager class to render the stone sprites. This simple pipeline made the process much faster.<br /> |
+| Dead Wall          | This consume the most performance during the game because each single unit will need to detect the player's position and echoing to their neighbour to attack the player. So I changed the recursive echoing to a simple radius detection and only change the players' state to make sure the player will only take the damage from all units once per frame. |
+| drawSomeTile       | TBC, unfixed bug still here, so I used drawAllTiles instead, will fix it later. |
+| TBC                |                                                              |
 
 </details>
 
@@ -268,6 +272,12 @@ Notes:
 
 
 
-
-
 # 6. Demo Video
+
+Dev log 01  []
+
+Dev log 02  []
+
+Dev log 03  []
+
+Dev log 04  []

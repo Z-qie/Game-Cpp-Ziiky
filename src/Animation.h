@@ -3,6 +3,7 @@
 #include <vector>
 #include "SimpleImage.h"
 
+//Each animation has several images/sprites as a set of frames and controls the fps of the animation.
 class Animation
 {
 protected:

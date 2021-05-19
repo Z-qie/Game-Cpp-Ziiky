@@ -20,7 +20,9 @@ ViewCamera* ViewCamera::getInstance()
 ViewCamera::ViewCamera()
     : m_pEngine(Zy21586Engine::getInstance())
     , m_filterScaling(0, 0, Zy21586Engine::getInstance())
+    , m_filterTranslation(0, 0, &m_filterScaling)
 {
+
 }
 
 ViewCamera ::~ViewCamera()
@@ -37,13 +39,29 @@ ViewCamera ::~ViewCamera()
 
 void ViewCamera::bindCamera() {
 
-    m_pEngine->getBackgroundSurface()->setDrawPointsFilter(&m_filterScaling);
-    m_pEngine->getForegroundSurface()->setDrawPointsFilter(&m_filterScaling);
+    m_pEngine->getBackgroundSurface()->setDrawPointsFilter(&m_filterTranslation);
+    m_pEngine->getForegroundSurface()->setDrawPointsFilter(&m_filterTranslation);
+  /*  m_pEngine->getBackgroundSurface()->setDrawPointsFilter(&m_filterScaling);
+    m_pEngine->getForegroundSurface()->setDrawPointsFilter(&m_filterScaling);*/
 
 }
 
 void ViewCamera::onUpdate() {
+
+    // We grab the Position of the centre of the screen before the zoom
+    int iOldCentreX = m_pEngine->convertClickedToVirtualPixelXPosition(m_pEngine->getWindowWidth() / 2);
+    int iOldCentreY = m_pEngine->convertClickedToVirtualPixelYPosition(m_pEngine->getWindowHeight() / 2);
+    
     m_filterScaling.setStretch(m_iFactor, m_iFactor);
+   
+    // Now we grab the Position after the zoom
+    int iNewCentreX = m_pEngine->convertClickedToVirtualPixelXPosition(m_pEngine->getWindowWidth() / 2);
+    int iNewCentreY = m_pEngine->convertClickedToVirtualPixelYPosition(m_pEngine->getWindowHeight() / 2);
+
+    m_filterTranslation.changeOffset(iNewCentreX - iOldCentreX, iNewCentreY - iOldCentreY);
+
+    // Redraw the background
+    m_pEngine->redrawDisplay(); // Force total redraw
 }
 
 void  ViewCamera::zoomIn() {

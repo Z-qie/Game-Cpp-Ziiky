@@ -5,13 +5,15 @@
 #include "Zy21586Engine.h"
 #include "ImageMappingGeneralist.h"
 
+//All game objects inherit from DisplayableObject class and will be contained and handled in the DisplayableObjectContainer. 
+//Each game object is enhanced with a sprite and ImageMappingGeneralist(see below), which can display image with rotation, translation
+//and color Manipulation. Each GameObject uses center as coordinate and saved as Vec2 by default
 class GameObject : public DisplayableObject
 {
 protected:
     double m_dAngle{ 0.0 };
     SimpleImage sprite;
     ImageMappingGeneralist* m_pSpriteMapping{ nullptr };
-
 
 public:
     explicit GameObject(int iWidth = 0, int iHeight = 0, int iStartX = 0, int iStartY = 0, bool useTopLeft00 = false)

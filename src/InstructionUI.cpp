@@ -36,7 +36,7 @@ void InstructionUI::virtStart() {
 
     m_pAnimator->addAnimation(InstructionUIState::INTRO_IDLE, pAnimation);
     m_pAnimator->setAnimationState(InstructionUIState::INTRO_IDLE);
-    setPosition(Vec2{ 720, 2352/2 });
+    setPosition(Vec2{ 720 / 2, 2352 / 2 - 360 });
 }
 
 void InstructionUI::virtDoUpdate(int iCurrentTime) {
@@ -120,7 +120,7 @@ void InstructionUI::drawInstructionMsg() {
 
 void InstructionUI::resetBG() {
     // reset pic's position
-    setPosition(Vec2{ sprite.getWidth() / 2, sprite.getHeight() / 2 });
+    setPosition(Vec2{ 720 / 2, 2352 / 2 - 360 });
 }
 
 

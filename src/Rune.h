@@ -11,7 +11,10 @@ enum RuneState {
     RUNE_ACTIVE
 };
 
-
+//All the runes are initialized in inactive state by RuneManager during map generation phase and controlled during the game. 
+//When the player approaches a rune and activates it, the rune will go into activating state and release powerful spell to kill 
+//all enemies around(400 radius) and finally go into active state delayed by 5 seconds. 
+//After that this rune will no longer be needed and will be removed from the DisplayableObjectContainer and deleted.
 class Rune : public GameObject
 {
 private:
@@ -28,8 +31,6 @@ private:
 
     std::list<std::shared_ptr<ThunderBolt>> m_oThunderBoltList;
 
-
-
 public:
     Rune(int x, int y);
     virtual ~Rune();
@@ -38,7 +39,7 @@ public:
     virtual void virtDraw() override;
     virtual void virtDoUpdate(int iCurrentTime) override;
     virtual void drawSprite() override;
-
+    //cast spell
     void castThunderBoltAt(const Vec2& target);
     void updateAllThunderBolts();
     void drawAllThunderBolts();

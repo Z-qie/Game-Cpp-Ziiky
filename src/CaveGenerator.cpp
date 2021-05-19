@@ -6,7 +6,6 @@
 #include <math.h>
 #include <iterator>
 #include <algorithm>
-
 #include "header.h"
 #include "TileManager.h"
 #include "Utils.h"
@@ -14,8 +13,6 @@
 #include "Room.h"
 #include "Zy21586Engine.h"
 #include "RuneManager.h"
-
-
 #include "SimpleImage.h"
 #include "ImagePixelMapping.h"
 

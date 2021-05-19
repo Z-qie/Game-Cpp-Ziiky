@@ -17,11 +17,29 @@ constexpr auto cave_tile_edge = 2;
 constexpr auto cave_tile_spawner = 3;
 constexpr auto cave_tile_rune = 4;
 
-
 class Zy21586Engine;
 class Room;
 struct Vec2;
 struct PosPair;
+
+//This is a rouge - like survival game.Therefore, I made an auto - generated cave map with size 12800 * 7200 
+//which the player can explore in the cave with a 720 * 720 sized camera following.
+//
+//1.	Implemented this by first randomly by given seed setting each tile type of the map as cave tile / empty 
+//      ground tile(please see randomFillMap() in CaveGenerator) and then using a cellular - automata algorithm
+//      (please see smoothMap() in CaveGenerator) to smooth the noised map several times(based on strength) to 
+//      converge all same tiles to generate several caves.
+//2.	After that, I implemented a flood - fill algorithm(please see refineMap() in CaveGenerator) to get all 
+//      caves I got and refine the map by eliminating the cave with invalid size(too small or too big).Finally, 
+//      I implemented another modified TSP AI algorithm(please see connectClosestRooms() in CaveGenerator) to 
+//      connect all caves by finding the shortest path btw two tiles that are edges of every two cavesand creating 
+//      paths btw them by setting all tiles whose coordinates are overlapped by the lines btw these pairs of edges 
+//      with a pre - set width(please see createPassage()).
+//3.	When connecting caves, by making sure all caves are connected, I set the cave with the largest size as 
+//      main caveand make each cave is either connected to the main cave or the cave it connected with is connected
+//      to the main room and recursively.Therefore, all caves are achievable by the player after this process.
+//4.	During the generation, this generator will also initialize other tile types such as rune's position, dead walls,
+//      enemy spawning points and player's initial position.
 
 class CaveGenerator : public Zy21586TileManager
 {

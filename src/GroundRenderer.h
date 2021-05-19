@@ -2,11 +2,9 @@
 
 #include <string>
 #include <list>
-
 #include "Zy21586TileManager.h"
 #include "Room.h"
 #include "Utils.h"
-
 
 constexpr auto ground_tile_00 = 0;
 constexpr auto ground_tile_01 = 1;
@@ -15,9 +13,9 @@ constexpr auto ground_tile_03 = 3;
 constexpr auto ground_tile_04 = 4;
 constexpr auto ground_tile_05 = 5;
 
-
 class Zy21586Engine;
-struct Vec2;
+
+//This tile map as environment renderer will control the random environment features like fuzzy visual effect and different images of stones on the ground
 
 class GroundRenderer : public Zy21586TileManager
 {

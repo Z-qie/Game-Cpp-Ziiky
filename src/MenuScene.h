@@ -10,7 +10,14 @@ class MenuIntroButton;
 class MenuRecordButton;
 class MenuQuitButton;
 
-
+//This is a menu scene with a interactable sand simulation system.
+//By click left mouse button, the user can generate more particles into the scene;
+//by click right mouse button, the user can erase all the particles around the mouse position.
+//And all other particles will simulated the sand behavior to fill the erased gap.
+//when the number of particles exceeds a specific number, the bottom level of particles will be 
+//eliminated to ensure there will not be too many of them
+//Each particle is a struct contains a fixed color to simulated a noise effect of sand.
+//Of course it is still a menu page  with four animated button.
 class MenuScene :public BaseScene
 {
 public:

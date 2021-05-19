@@ -7,6 +7,9 @@ class ResultUI;
 class DiscardButtion;
 class ConfirmButton;
 
+//After winning the game,  you are transferred to this scene to show your record and compare with the best record. 
+//You will be asked to input your name with alphabetic character within  a length of 25. 
+//Of course you can discard your record and go back to menu directly.
 class ResultScene :public BaseScene
 {
 public:
@@ -19,11 +22,6 @@ public:
     virtual void virtMainLoopPreUpdate() override;
     virtual void virtPreDraw() override;
     virtual void virtPostDraw() override;
-
-
-    // input 
-    // check if to switch scene
-    //void setSwitchToScene(SceneID id);
 
 private:
     ResultUI* pResultUI{nullptr};

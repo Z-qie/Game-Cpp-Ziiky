@@ -15,6 +15,14 @@ enum WandState {
 
 class Zy21586Engine;
 
+//1. There is a wand flying around the player which can cast Magic Bolt (projectile class in code)(trigger by mouse and support auto shooting when pressed)
+//2. The wand is a game object whose position controlled by the user's mouse position. 
+//The wand will always be around the player (35 radius) and facing the direction to the mouse cursor.
+//3. It is the wand's job to cast spell and produce projectiles to hit enemies.
+//4. The wand has a 2-frame animation with images.
+//5. To enhance a smoothened experience, I used states to control if the wands can produce magic bolts to allow the user keep firing 
+//when keeping the left mouse down instead of the need of clicking multiple times.
+//6. There is no limit on cast magic bolts, fire as you wish!
 class Wand : public GameObject
 {
 private:

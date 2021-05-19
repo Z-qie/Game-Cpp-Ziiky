@@ -14,22 +14,26 @@ enum PlayerState {
 class PlayerController;
 class Wand;
 
-class Player : public LivingEntity/*, public Collidable*/
-{
+//the player is a subclass of LivingEntity which can be killed by enemies (named Gallo).
+//the player has 3 sets of 3 - frame animations which are : idle, left, right.
+//Note that the leftand right animations are not simply mirrored because of the same direction of shadowing.
 
+//Visual Effect 
+//1. When attacked by enemies (Gallo or DeadWall), the player sprite will flash with a lerped time interval to inform the player of the damage.
+//2. When the HP is lower than 20%,  the player sprite will be masked with red color to inform the player.
+class Player : public LivingEntity
+{
 protected:
     // singleton
     explicit Player(int iWidth = 64, int iHeight = 64, int iStartX = 220, int iStartY = 500, int iStartingHealth = 1000);
     static Player* pPlayer;
 
     PlayerState playerState{ PLAYER_IDLE };
-    PlayerController* m_pPlayerController{ nullptr };
+    PlayerController* m_pPlayerController{ nullptr };//handles the user input with smoothened playing experience by check x/y collision separately to avoid some stark stops.
     Animator<PlayerState>* m_pAnimator{ nullptr };
     float m_fTakeHitEffectLerp{ 0.f };
     int m_iMoveSpeed{ 3 }; //4
 
-
-    //Wand* m_pWand{nullptr};
 public:
     static Player* getInstance();
     virtual ~Player() override;

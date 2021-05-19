@@ -22,8 +22,6 @@ public:
     virtual void virtPreDraw() override;
     virtual void virtPostDraw() override;
 
- /*   virtual void virtMouseDown(int iButton, int iX, int iY) override;
-    virtual void virtMouseUp(int iButton, int iX, int iY) override;*/
     virtual void virtKeyDown(int iKeyCode)override;
 
 

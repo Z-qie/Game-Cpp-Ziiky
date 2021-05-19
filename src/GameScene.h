@@ -19,8 +19,8 @@ class GroundRenderer;
 class EnemySpawner;
 class DeadWallSpawner;
 
-
-
+//Where the player plays the game.Controls all the elements in the game : Map generator, enemy spawner, camera, environment render, UIs...
+//Has three inner state as * *Pause, Game overand Win** .
 class GameScene :public BaseScene
 {
     //Wand* m_pWand{nullptr};

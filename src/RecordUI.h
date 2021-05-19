@@ -11,10 +11,7 @@ protected:
     RecordUI();
     static RecordUI* pRecordUI;
 
-
 public:
-    //GameUI() {};
-
     static RecordUI* getInstance();
     virtual ~RecordUI() override { pRecordUI = nullptr; };
 
