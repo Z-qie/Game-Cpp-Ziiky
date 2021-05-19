@@ -301,7 +301,7 @@ Final Trailer (3min-) [TBC]
 
 
 <details>
-  <summary>  <h1>6. Dev Log </h1></summary>
+  <summary>  <h1>7. Dev Log </h1></summary>
 1. particle system(sand) (AI: cellular automata)
 
 2. procedural generated cave (AI: cellular automata + flood algorithm)
