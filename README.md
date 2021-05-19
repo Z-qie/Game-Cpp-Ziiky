@@ -235,8 +235,9 @@ Notes:
 </details>
 
 
+<details>
+  <summary>  <h1>5. Demo Screenshots </h1></summary>
 
-# 5. Demo Screenshots
 
 ### Loading Scene
 
@@ -268,6 +269,7 @@ Notes:
 
 ![GameTitleBar](images/INSTRUCTION_01.png)
 
+</details>
 
 
 
@@ -295,3 +297,145 @@ Final Trailer (3min-) [TBC]
 ###### Dev log 08  [https://www.bilibili.com/video/BV12q4y177VK]
 
 ###### Dev log 09  [https://www.bilibili.com/video/BV1Y64y1d74k]
+
+
+
+<details>
+  <summary>  <h1>6. Dev Log </h1></summary>
+1. particle system(sand) (AI: cellular automata)
+
+2. procedural generated cave (AI: cellular automata + flood algorithm)
+
+   - randomization - smoothing 
+   - connection btw separated caves
+
+3. Player (sprite + movement + rotation)
+
+4. Player weapon(wand) (translation +cast spell + projectile)
+
+5. Player sprite BG mask out 
+
+6. Camera (by translation filter)
+
+7. Player magic shoot (trigger by mouse and support auto shooting when pressed)
+
+8. Map edge refining
+
+9. collision detection (utils-funciton + collider layer)
+
+10. better collision detection enhance smooth experience by checking input separately
+
+11. animator - animations - id, frames
+
+    - at this point of time,  I have learn to use shared_pointer right now, so I will use this feature from now on.
+
+12. need to change shared to unique!
+
+13. dead wall enemy  & (idle/attack - frequency&density)effect & optimization !!!!! 
+
+14. damageable & living entity
+
+15. projectile destroy when: 1. hit wall, 2. hit enemy 3. out of screen(so you can chase it inside the screen)
+
+16. implementing a lerp and ping-pong function for procedural visual effect!!!!
+
+17. enemy spawn system: clamp to make wander far enough
+
+18. procedural animation : effect lerp when taking hit
+
+19. procedural animation : magic shoot floating fly + bloom
+
+20. procedural animation : gallo death effect
+
+21. finite-state machine (FSM).  ! nice !
+
+22. Thunder Storm!
+
+23. UI - life bar & MP for thunderStorm
+
+24. UI - data
+
+25. camera offset limiting
+
+26. UI - procedural animation
+
+27. Rune effect - two states now
+
+28. menu page: BG animation
+
+29. menu page: sand simulation - random + positioned + moused
+
+30. menu page: sand simulation - erasable by mouse
+
+31. menu page: sand simulation - color noise!
+
+32. menu page: sand simulation - restrict the number of spirit-particles, auto erase when exceeding.
+
+33. menu page: 4 buttons with animation
+
+34. using fillBackground() rather than filling every single tile to draw BG:  enhance performance!!!
+
+35. add groundRenderer to draw random sprite on ground
+
+36. groundRenderer: add random texture to provide gaming feeling
+
+37. shaking camera!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+38. 
+
+39. add a pause state in GameScene
+
+40. make pause UI shadowing the original game screen 
+
+41. add smoke effect by self-defined ImageMappinin  pause UI
+
+42. fixed resume time
+
+43. Game over UI shadowing and pausing the original game screen
+
+44. add Game over UI BG.
+
+45. Game over: replay + back to menu
+
+46. WIN UI shadowing and pausing the original game screen
+
+47. WIN lightening effect TBCTBCTBC
+
+    
+
+48. 15th
+
+49. Added a new title visual effect on pause, gameover, win and result screen
+
+50. Added a RESULT SCENE with record.txt  (r/w) 
+
+51. Added a user name input bar by keyboard 
+
+52. Added discard and save button with alerts
+
+53. Added a pattern detection for input and non-empty check when saving
+
+54. Added an animated loading Screen
+
+55. Added initialization log on loading screen
+
+56. Added particle system without mouse handling on loading screen
+
+57. Added Thunder Zone Spell when a Rune is activated
+
+58. debug on multi-kills by one spell (now only effect is remained without taking damage)
+
+59. adjust spells' balance with enemies.
+
+60. 16th
+
+61. Instruction screen with zooming (filterpoints) 
+
+62. record view screen
+
+63. added an user manual on instruction scene
+
+    
+</details>
+
+
