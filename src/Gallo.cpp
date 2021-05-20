@@ -51,14 +51,7 @@ void Gallo::virtDoUpdate(int iCurrentTime) {
             onDeath();
             break;
         case GALLO_INACTIVE:
-            //if (isVisible()) {
-            //    EnemySpawner::getInstance()->decrementLivingGallo();
-            //    //++EnemykilledNum;
-            //    setVisible(false);
-            //}
-
             break;
-
         case GALLO_WANDER:
         {
             bool foundTarget = CollisionSystem::checkCircles(
@@ -131,7 +124,8 @@ void Gallo::wander() {
             m_oNextWanderPosition = { // I use clamp here to keep the random target long enough
                 utils_clamp_g(
                     utils_rand(m_oWanderCenter.x - iWanderClampValue, m_oWanderCenter.x + iWanderClampValue),
-                    m_oWanderCenter.x - iWanderRadius ,m_oWanderCenter.x + iWanderRadius),
+                    m_oWanderCenter.x - iWanderRadius,
+                    m_oWanderCenter.x + iWanderRadius),
                  utils_clamp_g(
                      utils_rand(m_oWanderCenter.y - iWanderClampValue, m_oWanderCenter.y + iWanderClampValue),
                      m_oWanderCenter.y - iWanderRadius, m_oWanderCenter.y + iWanderRadius) };

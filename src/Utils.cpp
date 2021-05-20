@@ -83,14 +83,22 @@ Vec2 utils_offset_by_direction(double distance, const Vec2& unNormalizedDir) {
             // Get absolute value of each vector
     int ax = abs(unNormalizedDir.x);
     int ay = abs(unNormalizedDir.y);
-    double ratio = 1 / static_cast <double>(std::max(ax, ay));
+    
+    double notZero = static_cast <double>(std::max(ax, ay));
+    if (notZero != 0) {
+        double ratio = 1 / notZero;
+        //double ratio = 1 / static_cast <double>(std::max(ax, ay));
+        ratio = ratio * (1.29289 - (ax + ay) * ratio * 0.29289);
 
-    ratio = ratio * (1.29289 - (ax + ay) * ratio * 0.29289);
-
-    return Vec2{
-       static_cast<int>(unNormalizedDir.x * distance * ratio),
-       static_cast<int>(unNormalizedDir.y * distance * ratio)
-    };
+        return Vec2{
+           static_cast<int>(unNormalizedDir.x * distance * ratio),
+           static_cast<int>(unNormalizedDir.y * distance * ratio)
+        };
+    }
+    else {
+        //std::cout << 0 << std::endl;
+        return Vec2{0,0};
+    }
 }
 
 std::string utils_getTimeStr(int seconds) {

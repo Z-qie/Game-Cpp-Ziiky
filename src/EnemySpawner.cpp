@@ -54,6 +54,7 @@ Vec2 EnemySpawner::initGalloPosition() {
     int maxY = playerPosition.y + m_iGalloSpawnOffset;
 
     Vec2 newPosition;
+    int i = 0;
     while (1) {
         if (utils_rand(0, 1) == 0) { // fix x
             newPosition = { utils_rand(0, 1) == 0 ? minX : maxX, utils_rand(minY,maxY) };
@@ -69,5 +70,17 @@ Vec2 EnemySpawner::initGalloPosition() {
             //std::cout << "new spawner pos: " << x << ",  " << y << std::endl;
             return newPosition;
         }
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!! subtle: this make sure that we can change a the spawner area if the current area is not valid at all!!!!!!!!!!!!!!!!!!!
+        if (++i > 1000) {
+            --minX;
+            ++maxX;
+            --minY;
+            ++maxY;
+            std::cout << "spwaner area shifting!!!!!!!!!!!!!"<< std::endl;
+            i = 0;
+        }
     }
+
+
 }
