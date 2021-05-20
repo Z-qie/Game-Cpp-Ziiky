@@ -53,7 +53,23 @@ Vec2 EnemySpawner::initGalloPosition() {
     int minY = playerPosition.y - m_iGalloSpawnOffset;
     int maxY = playerPosition.y + m_iGalloSpawnOffset;
 
+    //Vec2 newPosition;
+    //while (1) {
+    //    if (utils_rand(0, 1) == 0) { // fix x
+    //        newPosition = { utils_rand(0, 1) == 0 ? minX : maxX, utils_rand(minY,maxY) };
+    //    }
+    //    else // fix y
+    //    {
+    //        newPosition = { utils_rand(minX,maxX), utils_rand(0, 1) == 0 ? minY : maxY };
+    //    }
+
+    //    int x = pCave->getMapXForScreenX(newPosition.x);
+    //    int y = pCave->getMapYForScreenY(newPosition.y);
+    //    if (pCave->isInBounds(x, y) && pCave->getMapValue(x, y) == cave_tile_spawner)
+    //        return newPosition;
+    //}
     Vec2 newPosition;
+    int i = 0;
     while (1) {
         if (utils_rand(0, 1) == 0) { // fix x
             newPosition = { utils_rand(0, 1) == 0 ? minX : maxX, utils_rand(minY,maxY) };
@@ -65,7 +81,19 @@ Vec2 EnemySpawner::initGalloPosition() {
 
         int x = pCave->getMapXForScreenX(newPosition.x);
         int y = pCave->getMapYForScreenY(newPosition.y);
-        if (pCave->isInBounds(x, y) && pCave->getMapValue(x, y) == cave_tile_spawner)
+        if (pCave->isInBounds(x, y) && pCave->getMapValue(x, y) == cave_tile_spawner) {
+            //std::cout << "new spawner pos: " << x << ",  " << y << std::endl;
             return newPosition;
+        }
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!! subtle: this make sure that we can change a the spawner area if the current area is not valid at all!!!!!!!!!!!!!!!!!!!
+        if (++i > 1000) {
+            --minX;
+            ++maxX;
+            --minY;
+            ++maxY;
+            std::cout << "spwaner area shifting!!!!!!!!!!!!!" << std::endl;
+            i = 0;
+        }
     }
 }
