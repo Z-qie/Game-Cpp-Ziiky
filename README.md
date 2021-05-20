@@ -276,9 +276,9 @@ Notes:
 
 # 6. Demo Video
 
-##### Final Dev Demo (20min+) [https://www.bilibili.com/video/BV1Wo4y117ou]
+### Final Trailer (3min-) [https://www.bilibili.com/video/BV1uf4y1h7t3]
 
-Final Trailer (3min-) [TBC]
+##### Final Dev Demo (20min+) [https://www.bilibili.com/video/BV1Wo4y117ou]
 
 ###### Dev log 01  [https://www.bilibili.com/video/BV1PA411K7az]
 
