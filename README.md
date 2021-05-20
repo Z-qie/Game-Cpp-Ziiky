@@ -230,7 +230,7 @@ Notes:
 | Render Environment | 1.Because the game map is huge compared to the screen size, I check the boundary coordinates of camera every frame and only render the elements efficiently inside the view of camera.<br />2. As the ground is a tile manager, and only a few random stones needs to be pre-set and render separately, instead of render the ground tile one by one with the same colour, I simply fill the background as a dark grey colour and skip the tiles that are empty and only draw the wall tile as black. For the environmental stones, make a separate tile manager class to render the stone sprites. This simple pipeline made the process much faster.<br /> |
 | Dead Wall          | This consume the most performance during the game because each single unit will need to detect the player's position and echoing to their neighbour to attack the player. So I changed the recursive echoing to a simple radius detection and only change the players' state to make sure the player will only take the damage from all units once per frame. |
 | drawSomeTile       | TBC, unfixed bug still here, so I used drawAllTiles instead, will fix it later. |
-| TBC                |                                                              |
+| fast get the distance(target offset) by a speed and unnormalized direction                | Vec2 utils_offset_by_direction(double distance, const Vec2& unNormalizedDir) I found a faster method to normalize vector: https://www.h3xed.com/programming/fast-unit-vector-calculation-for-2d-games by Getting absolute value of each vector  |
 
 </details>
 
