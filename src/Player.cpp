@@ -108,7 +108,8 @@ void Player::drawSprite() {
 void Player::takeHit(int damage) {
     m_fTakeHitEffectLerp = 0.f;
     m_pSpriteMapping->setBrightnessPercentage(static_cast<int>(m_fTakeHitEffectLerp));
-    LivingEntity::takeHit(damage);
+    if(!invincibleMode)
+        LivingEntity::takeHit(damage);
 }
 
 

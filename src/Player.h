@@ -33,6 +33,7 @@ protected:
     Animator<PlayerState>* m_pAnimator{ nullptr };
     float m_fTakeHitEffectLerp{ 0.f };
     int m_iMoveSpeed{ 3 }; //4
+    bool invincibleMode{ false };
 
 public:
     static Player* getInstance();
@@ -50,5 +51,9 @@ public:
     //bool onCollisionEnter() override;
     int  getMoveSpeed() { return m_iMoveSpeed; };
     virtual void drawSprite() override;
+    // invincible mode
+    void switchInvincible() {
+        invincibleMode = !invincibleMode;
+    };
 };
 

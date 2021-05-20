@@ -89,7 +89,6 @@ void GameScene::virtMainLoopPreUpdate() {
         m_bWin = false;
     }
     else if (pRuneManager->isAllRuneActivated()) {
-        //else if (pRuneManager->getCurrentRuneNum() == 1) {
             // update reocrd
         RecordManager::getInstance()->updateInGameData(
             pGameUI->getSurvivingTimeInSec(),
@@ -106,25 +105,10 @@ void GameScene::virtMainLoopPreUpdate() {
 }
 
 void GameScene::virtMainLoopPostUpdate() {
-    //a
+    //
 }
 
 void GameScene::virtMainLoopDoBeforeUpdate() {
- /*   std::list<Rune*>runeList = pRuneManager->getRunes();
-    std::list<Rune*>::iterator itrRune = runeList.begin();
-    while (itrRune != runeList.end())
-    {
-        if ((*itrRune)->getState() == RuneState::RUNE_ACTIVE) {
-            std::cout << "Rune erasion start:" << (*itrRune)->getPosition().x << ", " << (*itrRune)->getPosition().y << std::endl;
-            pEngine->removeDisplayableObject(*itrRune);
-            delete* itrRune;
-            *itrRune = nullptr;
-
-            itrRune = runeList.erase(itrRune);
-        }
-        else
-            ++itrRune;
-    }*/
     std::vector<Rune*>runeList = pRuneManager->getRunes();
 
     for (int i = 0; i < runeList.size(); i++) {
@@ -151,7 +135,6 @@ void GameScene::virtMainLoopDoAfterUpdate() {
     if (!pEngine->isPaused()/* && !m_bWin*/) {
         pCamera->follow(pPlayer);
         pDeadWallSpawner->updateDeadWall();
-        //m_ParticleMap.updateParticleMap();
     }
 }
 
@@ -259,7 +242,9 @@ void GameScene::virtKeyDown(int iKeyCode) {
             pEngine->pause();
         }
         break;
-
+    case SDLK_i:
+        pPlayer->switchInvincible();
+        break;
     case SDLK_o:
         pRuneManager->activeAllRunes(); // test
         break;

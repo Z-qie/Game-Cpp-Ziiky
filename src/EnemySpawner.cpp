@@ -65,7 +65,9 @@ Vec2 EnemySpawner::initGalloPosition() {
 
         int x = pCave->getMapXForScreenX(newPosition.x);
         int y = pCave->getMapYForScreenY(newPosition.y);
-        if (pCave->isInBounds(x, y) && pCave->getMapValue(x, y) == cave_tile_spawner)
+        if (pCave->isInBounds(x, y) && pCave->getMapValue(x, y) == cave_tile_spawner) {
+            //std::cout << "new spawner pos: " << x << ",  " << y << std::endl;
             return newPosition;
+        }
     }
 }
